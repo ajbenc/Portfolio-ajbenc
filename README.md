@@ -26,16 +26,3 @@ npm run build      # type-check + production build
 npm run preview    # preview built assets
 ```
 
-### Customization Cheatsheet
-
-- Update copy, links, and metrics inside `src/data/portfolio.ts`.
-- Replace `/resume.pdf`, the demo/case-study URLs, and analytics ID (`index.html`).
-- Social icons map to `lucide-react`; add new entries by extending the `iconMap` in `Footer`.
-- Blog cards, skills, and contact channels are arrays—append/remove items as needed.
-- For inbound messages, create a Formspree form and set `VITE_FORMSPREE_ENDPOINT` in `.env` (see `.env.example`).
-
-### Deployment Notes
-
-- Provide a real Open Graph image at `/public/og-image.png` for rich link previews.
-- Keep SEO metadata (title, description, twitter tags) in `index.html` aligned with your brand voice.
-- Wire the validated contact form to your email/API service; the current implementation only confirms success client-side.
